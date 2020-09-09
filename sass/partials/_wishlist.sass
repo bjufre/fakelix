@@ -1,0 +1,20 @@
+.wishlists
+  #movies-list
+    display: flex
+    flex-wrap: wrap
+
+  .movie-item
+    margin-right: 16px
+
+    .wish-action
+      margin-top: 8px
+
+      .fas
+        color: $brand
+        transition: all .3s ease
+
+      &:hover
+        cursor: pointer
+
+        i
+          color: darken($brand, 15%)

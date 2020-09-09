@@ -1,0 +1,40 @@
+%flex-center
+  display: flex
+  align-items: center
+
+.movies-header
+  height: 90px
+
+  @extend %flex-center
+  justify-content: space-between
+
+  #logo
+    max-width: 200px
+    margin-right: 40px
+
+  .header-left,
+  .header-right
+    @extend %flex-center
+
+  nav ul
+    @extend %flex-center
+    justify-content: flex-start
+
+    li
+      margin-right: 32px
+
+      &:last-of-type
+        margin-right: 0
+
+      a.active
+        color: $brand
+
+  .wishlist-link
+    opacity: .7
+
+    .wishlist-count
+      margin-left: 4px
+
+    i
+      margin-right: 8px
+      opacity: .7
