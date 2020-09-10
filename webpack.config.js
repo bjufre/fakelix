@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
@@ -94,6 +95,7 @@ module.exports = {
       chunkFilename: '[id].[hash].css'
     }),
     new webpack.EnvironmentPlugin(['NODE_ENV']),
+    new Dotenv(),
   ],
   devServer: {
     hot: true,

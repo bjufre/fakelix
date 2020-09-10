@@ -3,7 +3,7 @@ import { stringify } from 'query-string';
 
 const version = '3';
 // TODO: Add dotenv support
-const apiKey = 'bc604082af64048621bf25c5bd136b98';
+const apiKey = process.env.API_KEY;
 
 export default (endpoint, params = {}) => {
   const defaultParams = {

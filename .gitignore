@@ -69,7 +69,10 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+# NOTE: This should be commented but because
+#       we need it in order to show how it would be done
+#       we leave it as is.
+# .env
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
@@ -83,6 +86,7 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+public
 
 # Gatsby files
 .cache/
@@ -121,7 +125,8 @@ dist
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
